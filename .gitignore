@@ -35,6 +35,10 @@ MANIFEST
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
+#dataset
+/dataset/
+/unittests/ogbg_molhiv
+
 
 # Unit test / coverage reports
 htmlcov/
