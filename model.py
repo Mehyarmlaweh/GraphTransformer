@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch_geometric.nn import global_add_pool
+from data import load_pcqm4m_lsc, preprocess_batch
 
 class GraphormerAttention(nn.Module):
     def __init__(self, hidden_dim, num_heads, dropout=0.1):
@@ -136,7 +137,6 @@ class Graphormer(nn.Module):
         return out
 
 if __name__ == "__main__":
-    from data import load_pcqm4m_lsc, preprocess_batch
     train_loader, _ = load_pcqm4m_lsc(batch_size=2)
     model = Graphormer(input_dim=9, edge_dim=3)
     for batch in train_loader:
