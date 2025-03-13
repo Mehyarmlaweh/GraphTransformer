@@ -157,10 +157,6 @@ python train.py --batch_size 16 --epochs 20
 - **Test Failures**: Verify `ogbg-molhiv` downloaded correctly in `dataset/`.
 
 ## Extending the Project
-
-- **More Tests**: Add `unittests/test_model.py` and `test_train.py` (see suggestions in previous responses).
-- **Inference**: Create `predict.py` for standalone predictions with trained models.
-- **Config File**: Use `config.json` for hyperparameters.
 - **Tuning**: Integrate `optuna` for hyperparameter optimization.
 
 ## License
