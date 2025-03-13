@@ -18,7 +18,9 @@ This project implements a Graphormer model for the PCQM4Mv2 dataset from the Ope
     ├── train.py          # Training script with logging and command-line options
     ├── requirements.txt  # Python dependencies
     ├── unittests/        # Unit tests directory
-    │   └── test_data.py  # Tests for data loader
+    │   ├── test_data.py  # Tests for data loader
+    │   ├── test_model.py # Tests for model
+    │   └── test_train.py # Tests for train
     ├── graphvenv/        # Virtual environment
     └── dataset/          # PCQM4Mv2 dataset (auto-downloaded on first run)
 ```
